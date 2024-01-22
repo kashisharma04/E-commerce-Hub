@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import amz1 from './amz1.jpg'
 import amz2 from './amz2.jpg'
 import amz3 from './amz3.jpg'
+// import { Link } from "react-router-dom";
 import './Home.css';
 
 function Home() {
@@ -21,6 +22,7 @@ function Home() {
   return (
     <>
       <h1>Welcome to our Website</h1>
+      {/* <ul><li><Link > <input type="text" placeholder="Search.." /></Link></li></ul> */}
       {/* <div className="container"> */}
         <div
           id="carouselExampleIndicators"
@@ -33,10 +35,10 @@ function Home() {
               <img src={amz1} className="d-block w-100" alt="e-com" />
             </div>
             <div className="carousel-item">
-              <img src={amz2} className="d-block w-100" alt="..." />
+              <img src={amz2} className="d-block w-100" alt="e-com" />
             </div>
             <div className="carousel-item">
-              <img src={amz3} className="d-block w-100" alt="..." />
+              <img src={amz3} className="d-block w-100" alt="e-com" />
             </div>
           </div>
           <button
@@ -44,7 +46,7 @@ function Home() {
             type="button"
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev"
-            style={{"margin-top": "-50px"}}
+            // style={{"margin-top": "-50px"}}
           >
             <span className="carousel-control-prev-icon" aria-hidden="true" />
             <span className="visually-hidden">Previous</span>
@@ -54,7 +56,7 @@ function Home() {
             type="button"
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide="next"
-            style={{"margin-top": "-50px"}}
+            // style={{"margin-top": "-50px"}}
           >
             <span className="carousel-control-next-icon" aria-hidden="true" />
             <span className="visually-hidden">Next</span>

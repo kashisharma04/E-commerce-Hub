@@ -43,6 +43,7 @@ const products = [
 // };
 export default function Cart() {
   const [quan, setQuan] = useState(0);
+  const [data, setData] = useState([]);
 
   const inc = () => {
     setQuan(quan + 1);
@@ -52,6 +53,12 @@ export default function Cart() {
     setQuan(quan - 1);
     }
   };
+  const response = async () => {
+    const res = await fetch('http://localhost:8080/pro');
+    const jsonData = await res.json();
+    setData(jsonData.msg);
+  };
+  response()
   return (
     <div className="cards">
       {/* <div className="side-bar">
@@ -89,21 +96,24 @@ export default function Cart() {
         </div>
       ))} */}
 
-      {products.map((product) => (
-        <div className="cards">
-          <div className="product-card">
-          <h2>{product.name}</h2>
-          <img src={product.image} alt="" className="img2" />
-          <p>{product.info}</p>
-          <p>Price : $ {product.price}</p>
+      {data.map((product) => (
+        <>
+        {/* // <div className="cards"> */}
+        {/* //   <div className="product-card"> */}
+          <h2>{product.proName}</h2>
+          <img src={product.proImg} alt="" className="img2" />
+          <p>{product.proInfo}</p>
+          <p>Price : $ {product.proPrice}</p>
           <button className="btn2">Add to cart</button>
           <br /><br />
           <button className="btn2" onClick={inc}>+</button>
          <span>{quan}</span>
           <button onClick={dec} className="btn2">-</button>
-          </div>
-        </div>
+        {/* //   </div> */}
+        {/* // </div> */}
+        </>
       ))}
+      {/* <h1>Hello</h1> */}
     </div>
   );
 }

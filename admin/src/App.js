@@ -5,6 +5,8 @@ function App() {
   const [id, setId] = useState("");
   const [title, setTitle] = useState("");
   const [imgurl, setImgurl] = useState("");
+  const [info, setInfo] = useState("");
+  const [price, setPrice] = useState("");
   const [path, setPath] = useState("");
 
   const handleSubmit = async () => {
@@ -21,6 +23,8 @@ function App() {
         title: title,
         imgurl: imgurl,
         path: path,
+        info: info,
+        price: price,
       }),
       headers: {
         "Content-Type": "application/json",
@@ -37,6 +41,10 @@ function App() {
       setImgurl(e.target.value);
     } else if (e.target.id == "path") {
       setPath(e.target.value);
+    } else if (e.target.id == "info") {
+      setInfo(e.target.value);
+    } else if (e.target.id == "price") {
+      setPrice(e.target.value);
     }
   };
   return (
@@ -50,6 +58,10 @@ function App() {
         <input type="text" id="img" onChange={handleChange} /> <br />
         <lable htmlFor="path">path</lable>
         <input type="text" id="path" onChange={handleChange} /> <br />
+        <lable htmlFor="info">info</lable>
+        <input type="text" id="info" onChange={handleChange} /> <br />
+        <lable htmlFor="price">price</lable>
+        <input type="text" id="price" onChange={handleChange} /> <br />
         <button type="button" onClick={handleSubmit}>
           Submit
         </button>
