@@ -6,7 +6,8 @@ const cartSchema = new mongoose.Schema({
     proName : {type: String},
     proImg : {type : String},
     proInfo : {type : String},
-    proPrice : {type : String}
+    proPrice : {type : String},
+    path:{type:String},
 },
 {timeStamp : true,}
 )

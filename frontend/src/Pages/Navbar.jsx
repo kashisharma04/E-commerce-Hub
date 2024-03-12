@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import "./Navbar.css";
 import { FiShoppingCart } from "react-icons/fi";
+import { IoSearch } from "react-icons/io5";
 import { CgMenu, CgClose } from "react-icons/cg";
 // import { IoMdHome } from "react-icons/io";
 
@@ -10,7 +11,7 @@ const Navbar = () => {
   return (
     <nav>
       <ul>
-        <li>
+        <li >
           <Link to="/">{pic}</Link>
         </li>
         <li>
@@ -32,10 +33,10 @@ const Navbar = () => {
           <Link to="/wishlist"><FiShoppingCart /></Link>
         </li>
         <li>
-          <Link > <input type="text" placeholder="Search.." /></Link>
+          <Link className='search'> <input type="text" placeholder="Search.." /><IoSearch /></Link>
         </li>
         {/* <li>
-          <Link to="/"> <CgMenu /></Link>
+          <Link to="/"><IoSearch /></Link>
         </li> */}
 
       </ul>

@@ -9,7 +9,7 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({extended : true}))
 
-mongoose.connect("mongodb+srv://user01:user01@cluster0.n8tgr6m.mongodb.net/e-com?retryWrites=true&W=majority" , {useNewURLParser:true})
+mongoose.connect("mongodb+srv://user01:user001@cluster0.n8tgr6m.mongodb.net/e-com")
 .then(()=>{
     console.log("Database Connected!")
 })

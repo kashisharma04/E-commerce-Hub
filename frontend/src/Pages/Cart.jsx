@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Link} from 'react-router-dom'
+// import {Link} from 'react-router-dom'
 import "./Cart.css";
 
 const products = [
@@ -30,29 +30,33 @@ const products = [
 ];
 // useState always used inside functional components else it'll give error
 // const productCart = ({ products }) => {
-  // const [quan, setQuan] = useState(0);
+// const [quan, setQuan] = useState(0);
 
-  // const inc = () => {
-  //   setQuan(quan + 1);
-  // };
-  // const dec = () => {
-  //   if(quan > 1){
-  //   setQuan(quan - 1);
-  //   }
-  // };
+// const inc = () => {
+//   setQuan(quan + 1);
+// };
+// const dec = () => {
+//   if(quan > 1){
+//   setQuan(quan - 1);
+//   }
+// };
 // };
 export default function Cart() {
   const [quan, setQuan] = useState(0);
   const [data, setData] = useState([]);
+  const [wishlist, setWishlist] = useState();
 
   const inc = () => {
     setQuan(quan + 1);
   };
   const dec = () => {
-    if(quan >= 1){
-    setQuan(quan - 1);
+    if (quan >= 1) {
+      setQuan(quan - 1);
     }
   };
+  const handleItem = (item) => {
+    setWishlist([...wishlist, item])
+  }
   const response = async () => {
     const res = await fetch('http://localhost:8080/pro');
     const jsonData = await res.json();
@@ -98,19 +102,27 @@ export default function Cart() {
 
       {data.map((product) => (
         <>
-        {/* // <div className="cards"> */}
-        {/* //   <div className="product-card"> */}
-          <h2>{product.proName}</h2>
-          <img src={product.proImg} alt="" className="img2" />
-          <p>{product.proInfo}</p>
-          <p>Price : $ {product.proPrice}</p>
-          <button className="btn2">Add to cart</button>
-          <br /><br />
-          <button className="btn2" onClick={inc}>+</button>
-         <span>{quan}</span>
-          <button onClick={dec} className="btn2">-</button>
-        {/* //   </div> */}
-        {/* // </div> */}
+        {/* <h1>dummy</h1> */}
+          <div className="cards">
+            <div className="product-card">
+              <h2>{product.title}</h2>
+              <img src={product.imgurl} alt="img" className="img" />
+              <p>{product.info}</p>
+              <p>Price : {product.price}</p>
+              {/* <button className="btn2">Add to cart</button> */}
+              {/* <button onClick={handleItem}>
+                Add to Cart
+              </button> */}
+              
+              <br /><br />
+              <button className="btn2" onClick={inc}>+</button>
+              <span>{quan}</span>
+              <button onClick={dec} className="btn2">-</button>
+
+              {/* <button>Add Product</button> */}
+            </div>
+          </div>
+          
         </>
       ))}
       {/* <h1>Hello</h1> */}

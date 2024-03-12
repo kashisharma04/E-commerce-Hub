@@ -8,7 +8,9 @@ const createCart = async (req,res)=>{
     return res.status(201).send({Status : true, msg : "Product Created Successfully" , result : result})
 }
 const getCart = async function(req,res){
-    let data = await cart.find({proName:1 , proImg :1})
+    let data = await cart.find()
+    console.log(data);
     return res.status(201).send({status : true , msg : data })
+    
 }
 module.exports = {createCart, getCart};

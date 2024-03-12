@@ -3,7 +3,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color : #f49939;
+  background-color : #141414;
 }
 
 li {
@@ -12,7 +12,7 @@ li {
 
 li a {
   display: block;
-  color: rgb(11, 10, 10);
+  color: rgb(250, 246, 246);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -32,7 +32,8 @@ input[type="text"] {
   border: none;
   border-radius: 3px;
   margin-left: 10px;
-  width: 150px;
+  width: 600px;
+  
 }
 
 .img1{

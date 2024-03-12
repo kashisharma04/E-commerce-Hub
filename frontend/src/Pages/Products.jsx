@@ -1,7 +1,7 @@
 import { useState } from "react";
 // import "./App.css";
 
-function App() {
+function Products() {
   // const [id, setId] = useState("");
   const [proName, setProname] = useState("");
   const [proImg, setProimg] = useState("");
@@ -66,4 +66,11 @@ function App() {
   );
 }
 
-export default App;
+export default Products;
+
+
+
+
+
+
+

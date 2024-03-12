@@ -4,9 +4,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Navbar from "./Pages/Navbar";
-import Cartcreate from "./Pages/Cartcreate";
+import Products from "./Pages/Products";
 import Cart from "./Pages/Cart";
 import Wishlist from "./Pages/Wishlist";
+import SmallNav from "./Pages/SmallNav";
 
 function App() {
 
@@ -14,12 +15,13 @@ function App() {
     <>
     <BrowserRouter>
     <Navbar />
+    <SmallNav />
     <Routes>
       <Route element={<Home />} path="/" />
       <Route element={<About />} path="/about" />
       <Route element={<Contact />} path="/contact" />
-      <Route element={<Cartcreate />} path="/product" />
-      <Route element={<Cart />} path="/pro" />
+      <Route element={<Cart />} path="/product" />
+      {/* <Route element={<Products />} path="/pro" /> */}
       <Route element={<Wishlist />} path="/wishlist" />
     </Routes>
     </BrowserRouter>
