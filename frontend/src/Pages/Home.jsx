@@ -79,7 +79,9 @@ function Home() {
             <Link to={product.path}>See more</Link>
           </div>
         ))}
+        
  </div>
+
 
         <div className="box">
         <p></p>
@@ -121,32 +123,80 @@ function Home() {
             </div>
           </div>
 
-          <div className="box">
-      <div className="image-container-1">
+          <div className="image-container-1">
         <div className="image-item">
-          <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/GW_CPB_/QC_CC/QC_PC_186x116_6._SY116_CB585042283_.jpg" alt="image" /><br />
-          {/* <Link to='/cards'>see more</Link> */}
-          Starting ₹499
-          
+        <Link to='/product'> <img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/GW_CPB_/QC_CC/QC_PC_186x116_6._SY116_CB585042283_.jpg"
+                alt="image"
+              /> 
+              <br />
+              {/* <Link to='/cards'>see more</Link> */}
+              </Link>   Starting ₹499
+              <div className="image-item">
+              <Link to='/product'>  <img
+                  src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/GW_CPB_/QC_CC/QC_PC_186x116_7._SY116_CB585040546_.jpg"
+                  alt="image"
+                />
+               </Link> <br />
+                {/* <Link to='/cards'>see more</Link> */}
+                Starting ₹123
+              </div>
+            </div>
+            <div className="image-item">
+            <Link to='/product'><img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/AmazonBrands/Bikram/Bikram1/1xDesktopQuadcardw_title-Card_3._SY116_CB572041871_.jpg"
+                alt="image"
+              />
+             </Link> <br />
+              {/* <Link to='/cards'>see more</Link> */}
+              Starting ₹800
+              <div className="image-item">
+              <Link to='/product'><img
+                  src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/AmazonBrands/Bikram/Bikram1/QC_186x116_1._SY116_CB595777477_.jpg"
+                  alt="image"
+                />
+                <br />
+                </Link> Starting ₹600
+              </div>
+            </div>
+          </div>
+        <div className="image-container-1">
         <div className="image-item">
-          <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/GW_CPB_/QC_CC/QC_PC_186x116_7._SY116_CB585040546_.jpg" alt="image" /><br />
-          {/* <Link to='/cards'>see more</Link> */}
-          Starting ₹123
-        </div>
-        </div>
-        <div className="image-item">
-          <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/AmazonBrands/Bikram/Bikram1/1xDesktopQuadcardw_title-Card_3._SY116_CB572041871_.jpg" alt="image" /><br />
-          {/* <Link to='/cards'>see more</Link> */}
-          Starting ₹800
-      
-        <div className="image-item">
-          <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/AmazonBrands/Bikram/Bikram1/QC_186x116_1._SY116_CB595777477_.jpg" alt="image" /><br />
-          {/* <Link to='/cards'>see more</Link> */}
-          Starting ₹600
-        </div>
-        </div>
-        </div>
-        </div>
+        <Link to='/product'> <img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/GW_CPB_/QC_CC/QC_PC_186x116_6._SY116_CB585042283_.jpg"
+                alt="image"
+              /> 
+              <br />
+              {/* <Link to='/cards'>see more</Link> */}
+              </Link>   Starting ₹499
+              <div className="image-item">
+              <Link to='/product'>  <img
+                  src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/GW_CPB_/QC_CC/QC_PC_186x116_7._SY116_CB585040546_.jpg"
+                  alt="image"
+                />
+               </Link> <br />
+                {/* <Link to='/cards'>see more</Link> */}
+                Starting ₹123
+              </div>
+            </div>
+            <div className="image-item">
+            <Link to='/product'><img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/AmazonBrands/Bikram/Bikram1/1xDesktopQuadcardw_title-Card_3._SY116_CB572041871_.jpg"
+                alt="image"
+              />
+             </Link> <br />
+              {/* <Link to='/cards'>see more</Link> */}
+              Starting ₹800
+              <div className="image-item">
+              <Link to='/product'><img
+                  src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/AmazonBrands/Bikram/Bikram1/QC_186x116_1._SY116_CB595777477_.jpg"
+                  alt="image"
+                />
+                <br />
+                </Link> Starting ₹600
+              </div>
+            </div>
+          </div>
         </div>
      
     </>

@@ -16,7 +16,7 @@ function Products() {
     // formData.append("path", path);
     // console.log(formData);
     // console.log(title);
-    const res = await fetch("http://localhost:8080/pro", {
+    const res = await fetch("http://localhost:8080/prod", {
       method: "POST",
       body: JSON.stringify({
         // id: id,
