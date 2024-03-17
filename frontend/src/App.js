@@ -1,13 +1,12 @@
 import "./App.css";
-import Home from "./Pages/Home";
+import Home from "./home/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import About from "./Pages/About";
-import Contact from "./Pages/Contact";
-import Navbar from "./Pages/Navbar";
-import Products from "./Pages/Products";
-import Cart from "./Pages/Cart";
-import Wishlist from "./Pages/Wishlist";
-import SmallNav from "./Pages/SmallNav";
+import About from './components/About';
+import Contact from "./components/Contact";
+import Navbar from "./components/Navbar";
+import Cart from "./product/Product";
+import Wishlist from "./wishlist/Wishlist";
+import SmallNav from "./components/SmallNav";
 
 function App() {
 
@@ -21,7 +20,6 @@ function App() {
       <Route element={<About />} path="/about" />
       <Route element={<Contact />} path="/contact" />
       <Route element={<Cart />} path="/product" />
-      {/* <Route element={<Products />} path="/pro" /> */}
       <Route element={<Wishlist />} path="/wishlist" />
     </Routes>
     </BrowserRouter>
