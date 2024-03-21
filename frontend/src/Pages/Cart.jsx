@@ -48,10 +48,9 @@ export default function Cart() {
           <div className="product-card">
             <h2>{product.proName}</h2>
             <img src={product.proImg} alt="img" className="img" />
-            <p>{product.info}</p>
+            <p>{product.proInfo}</p>
             <p>Price : {product.proPrice}</p>
-            <br />
-            <br />
+   
             <button onClick={() => addToWishlist(product.id)}>Add to Wishlist</button>
             <button className="btn2" onClick={() => incrementQuantity(product.id)}>
               +
