@@ -1,0 +1,55 @@
+.parentContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.productCard {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 10px 0px;
+  width:23vw;
+  text-align: center;
+}
+.productCard img {
+  max-width: 100%;
+  width: 95%;
+  height: 25vh;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.details{
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
+}
+.proName{
+   font-weight: 700;
+   margin: 0px 10px;
+}
+.wishBtn{
+  margin-bottom: 10px;
+}
+.btn2 {
+  background-color: #f88f1f;
+  color: #fff;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn2:hover {
+  background-color: #8e460c;
+}
+
+span {
+  margin: 0 8px;
+}
+
+
+
+
